@@ -43,7 +43,7 @@ public class TextToImg {
                 BufferedImage.TYPE_INT_BGR);
         Graphics g = image.getGraphics();
         g.setClip(0, 0, minX, Y);
-        g.setColor(new Color(Integer.parseInt("000000", 16)));
+        g.setColor(new Color(Integer.parseInt("f5fffa", 16)));
         g.fillRect(0, 0,minX, Y);// 先用黑色填充整张图片,也就是背景
         g.setColor(Color.black);// 在换成黑色
         g.setFont(font);// 设置画笔字体
