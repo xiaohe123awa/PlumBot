@@ -80,7 +80,7 @@ public class QQBot implements Bot {
 
             List<Long> groups = Config.bot.Groups;
             for (long groupID : groups) {
-                sendGroupMsg("PlumBot已启动", groupID);
+                sendGroupMsg("服务器已启动", groupID);
             }
         }).schedule();
     }
@@ -89,7 +89,7 @@ public class QQBot implements Bot {
     public void shutdown() {
         List<Long> groups = Config.bot.Groups;
         for (long groupID : groups) {
-            sendMsg(true, "PlumBot已关闭", groupID);
+            sendMsg(true, "服务器已关闭", groupID);
         }
         connection.stop();
     }
